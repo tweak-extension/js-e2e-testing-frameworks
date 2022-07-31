@@ -3,24 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "MSW=on react-scripts start",
+    "start:test": "MSW=off react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:nightwatch": "npx nightwatch tests/nightwatch.spec.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
@@ -36,7 +34,10 @@
     ]
   },
   "devDependencies": {
-    "msw": "^0.44.2"
+    "chromedriver": "^103.0.0",
+    "geckodriver": "^3.0.2",
+    "msw": "^0.44.2",
+    "nightwatch": "^2.3.0"
   },
   "msw": {
     "workerDirectory": "public"

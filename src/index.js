@@ -4,7 +4,9 @@ import './index.css';
 import App from './App';
 import { worker } from './mocks/browser'
 
-worker.start()
+if (process.env.MSW === 'on') {
+  worker.start()
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
