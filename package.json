@@ -14,6 +14,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:nightwatch": "npx nightwatch tests/nightwatch.spec.js",
+    "test:testcafe": "testcafe chrome tests/testcafe.spec.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -37,7 +38,8 @@
     "chromedriver": "^103.0.0",
     "geckodriver": "^3.0.2",
     "msw": "^0.44.2",
-    "nightwatch": "^2.3.0"
+    "nightwatch": "^2.3.0",
+    "testcafe": "^1.20.0"
   },
   "msw": {
     "workerDirectory": "public"
