@@ -4,13 +4,12 @@ const mock = require('./common/mock')
 describe('Nightwatch.js', function () {
   it('Nightwatch.js', async function () {
     await browser
-      // This command only works with Chromium based browsers such as Google Chrome and Microsoft Egde
       .mockNetworkResponse('http://localhost:3000/random-quote', {
         status: 200,
         body: JSON.stringify(mock),
       })
       .navigateTo('http://localhost:3000')
-      .assert.elementPresent(selectors.title)
+      .assert.textEquals(selectors.title, 'Quotez')
       .assert.elementPresent(selectors.contentEmpty)
       .assert.textEquals(selectors.contentEmpty, '...')
       .click(selectors.trigger)

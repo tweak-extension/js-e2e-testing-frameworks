@@ -10,4 +10,3 @@ Each test is a minimla exmaple for a given framework that allows us to compare t
 * Asserting DOM elements' presence and content
 * DOM interactions (click)
 * Mocking network requests
-
