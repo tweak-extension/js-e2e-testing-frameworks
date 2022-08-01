@@ -11,11 +11,9 @@
   "scripts": {
     "start": "MSW=on react-scripts start",
     "start:test": "MSW=off react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
     "test:nightwatch": "npx nightwatch tests/nightwatch.spec.js",
-    "test:testcafe": "testcafe chrome tests/testcafe.spec.js",
-    "eject": "react-scripts eject"
+    "test:playwright": "npx playwright test playwright",
+    "test:testcafe": "testcafe chrome tests/testcafe.spec.js"
   },
   "eslintConfig": {
     "extends": [
