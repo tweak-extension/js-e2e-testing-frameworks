@@ -14,7 +14,9 @@
     "test:nightwatch": "npx nightwatch tests/nightwatch.spec.js",
     "test:playwright": "npx playwright test playwright",
     "test:testcafe": "testcafe chrome tests/testcafe.spec.js",
-    "test:webdriverio": "wdio run wdio.conf.js"
+    "test:webdriverio": "wdio run wdio.conf.js",
+    "test:cypress": "cypress run",
+    "test:cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +42,7 @@
     "@wdio/mocha-framework": "^7.20.7",
     "@wdio/spec-reporter": "^7.20.8",
     "chromedriver": "^103.0.0",
+    "cypress": "^10.3.1",
     "geckodriver": "^3.0.2",
     "msw": "^0.44.2",
     "nightwatch": "^2.3.0",
