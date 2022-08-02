@@ -30,4 +30,4 @@ logs
 /playwright/.cache/
 
 # cypress
-cypress/videos
+tests/cypress/videos
