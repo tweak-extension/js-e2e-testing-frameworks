@@ -9,8 +9,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "MSW=on react-scripts start",
-    "start:test": "MSW=off react-scripts start",
+    "start": "REACT_APP_MSW=on react-scripts start",
+    "start:test": "REACT_APP_MSW=off react-scripts start",
     "test:nightwatch": "npx nightwatch tests/nightwatch.spec.js",
     "test:playwright": "npx playwright test playwright",
     "test:testcafe": "testcafe chrome tests/testcafe.spec.js",

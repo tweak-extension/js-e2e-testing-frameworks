@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './app';
 import { worker } from './mocks/browser'
 
-if (process.env.MSW === 'on') {
+if (process.env.REACT_APP_MSW === 'on') {
   worker.start()
 }
 

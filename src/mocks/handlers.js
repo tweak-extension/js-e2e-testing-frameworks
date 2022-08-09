@@ -26,9 +26,8 @@ const quotes = [
 ]
 
 export const handlers = [
-  rest.get('/random-quote', (req, res, ctx) => {
+  rest.get('*/random-quote', (req, res, ctx) => {
     const data = quotes[getRandomInt(quotes.length - 1)]
     return res(ctx.delay(getRandomInt(500)), ctx.json(data))
   }),
 ]
-
