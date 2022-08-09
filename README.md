@@ -26,6 +26,6 @@ Each test is a minimal example of a given framework that allows us to compare th
 
 ## 📚 Other Interesting Blogposts
 
-* [5 Tips for Effective Puppeteer Automation](https://tweak-extension.com/blog/best-puppeteer-tips)
+* [Complete Guide to Test Chrome Extensions with Puppeteer](https://tweak-extension.com/blog/complete-guide-test-chrome-extension-puppeteer)
 * [How to Simulate HTTP Request Errors](https://tweak-extension.com/blog/how-to-simulate-error-http-request)
 * [The Different Shades of Testing Web Apps: Aiming for Balance](https://tweak-extension.com/blog/web-application-testing)
